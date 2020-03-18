@@ -28,10 +28,13 @@ namespace loginSisap
 
             services.AddControllersWithViews();
 
+
             services.AddDbContext<LoginSisapContext>(options =>
                           options.UseSqlServer(Configuration.GetConnectionString("LoginSisapContext")));
             /*  services.AddDbContext<LoginContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("LoginSisapContext"))); */
+              options.UseSqlServer(Configuration.GetConnectionString("LoginSisapContext"))); */
+
+            services.AddTransient<Models.ILoginManager, Models.LoginManager>();
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

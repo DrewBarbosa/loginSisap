@@ -15,11 +15,13 @@ namespace loginSisap.Models
 
         public async Task<object> Entrar(Login login)
         {
+
             return login;
         }
 
         public async Task<object> NovoUsuario(Login novoUsuario)
         {
+
             return novoUsuario;
         }
     }

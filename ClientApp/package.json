@@ -12,9 +12,7 @@
     "react-dom": "^16.0.0",
     "react-router-bootstrap": "^0.24.4",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^3.0.1",
-    "reactstrap": "^6.3.0",
-    "rimraf": "^2.6.2"
+    "reactstrap": "^6.3.0"
   },
   "devDependencies": {
     "ajv": "^6.9.1",
@@ -31,7 +29,7 @@
     "extends": "react-app"
   },
   "scripts": {
-    "start": "rimraf ./build && react-scripts start",
+    "start": "",
     "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
